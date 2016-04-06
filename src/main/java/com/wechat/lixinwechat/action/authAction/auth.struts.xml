@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+	
+	<package name="lecture" extends="struts-api-base" namespace="/lecture">
+
+		<action name="getOpenid" class="com.wechat.lixinwechat.action.authAction.getAuthDispatch" method="doExec">
+			<result name="userBind" type="redirect">userBind.html?openid=${Openid}</result>
+			<result name="lecturePublish" type="redirect">userBind.html?openid=${Openid}</result>
+			<result name="lectureView" type="redirect">userBind.html?openid=${Openid}</result>
+			<result name="person" type="redirect">userBind.html?openid=${Openid}</result>
+			<result name="error" type="redirect">error.html</result>
+		</action>
+	</package>
+</struts>

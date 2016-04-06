@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+	
+	<package name="test" extends="struts-api-base" namespace="/lecture">
+
+		<action name="imageUrl_list" class="com.wechat.lixinwechat.action.test.TestAction" method="doExec">
+			<result type="json"></result> 
+		</action>
+		
+		<action name="getOpenid" class="com.wechat.lixinwechat.action.test.TestOpenidAction" method="doExec">
+			<result type="json"></result> 
+		</action>
+	</package>
+</struts>
